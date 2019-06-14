@@ -13,6 +13,7 @@ def first_challenge
     }
   }
 
+<<<<<<< HEAD
   contacts.each do |contact, info|
     if contact == "Freddy Mercury"
       info.each do |subject, detail|
@@ -25,4 +26,15 @@ def first_challenge
         end
       end
     end
+=======
+  first_challenge.each do |person, data|
+    data.each do |attribute, value|
+      if attribute == :favorite_icecream_flavors
+        value.each do |flavor|
+          :favorite_icecream_flavors.shift("strawberry")
+        end
+      end
+    end
+  end
+>>>>>>> 32390840e50c5df8da61bab5c737f1960b34bbeb
 end
